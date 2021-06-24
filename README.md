@@ -22,36 +22,33 @@ This is the strategy I will continuously build upon in pursuit of creating a hig
 
 ## Data
 Yearly team total stats as well as a history of every game log dating back to the start of the 2014 season was used in my analysis.
-The data used in this analysis comes from [Lahman's Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/) as well as [baseballsavant](https://baseballsavant.mlb.com/leaderboard/custom?year=2019,2018,2017,2016,2015&type=batter&filter=&sort=4&sortDir=desc&min=q&selections=xba,xslg,xwoba,xobp,xiso,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,&chart=false&x=xba&y=xba&r=no&chartType=beeswarm). After joining, manipulating, and feature engineering, I ended up with _____ rows and ___ features (or stats) used to predict season total wins. 
+The data used in this analysis comes from [Lahman's Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/) as well as [baseballsavant](https://baseballsavant.mlb.com/leaderboard/custom?year=2019,2018,2017,2016,2015&type=batter&filter=&sort=4&sortDir=desc&min=q&selections=xba,xslg,xwoba,xobp,xiso,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,&chart=false&x=xba&y=xba&r=no&chartType=beeswarm). 
 
 
 ## Method
 For this project I stuck to the CRISP-DM method. After retrieving the data, I cleaned and joined a number of different databases (Lahman's is an extensive database made up of 20+ csv files) in order to create my final database to use for modeling. 
 
-For modeling, I chose to work mostly with DecisionTree classifiers. Logisitc regression was used intially, but due to the high multicolinearity effecting many of my main features, I had to focus mainly on DecisionTrees. I prioritized accuracy as my main metric, but also set out to have high recall score as well so that my model was focused on rewarding those who deserve to be in the HOF and making sure we were not missing them in my binary classification models; HOF or not.
+For modeling, I tested many different models, but Random Forest with gridsearch resulted in the best findings for both my regression and classification analysis. For classification, I prioritized recall as my main metric, but also set out to have high accuracy score as well so that my model was focused on correctly predicting wins over losses.
 
-**The following players were removed from the data after running a couple models with them included. The players were those who have HOF numbers, but are currently banned by the MLB HOF committee due to Performance Enhancing Drugs (PEDs) use or other reasons:
-(Pete Rose, Alex Rodriguez, Barry Bonds, Sammy Sosa, Mark McGwire, Manny Ramirez, Rafael Palmero, and David Ortiz).
 
 ## Findings
-I found the stats both by position and overall playing career.
+I was able to pull in vegas lines for season total wins going back to 2014. I did a deep analysis and compare to see how accurate the vegas lines actually are compared to the end result. 
 ![vegas_accuracy](https://user-images.githubusercontent.com/67566192/123279297-b8e3ee00-d4d5-11eb-9d54-f51167796a25.png)
 
-Looking at the visuals above, it is clear that HOF players are vastly better than the rest of the field in every stat, however, there are different requirements depending on position i.e. Catchers ('C') not heavily rated on the number of hits or Shortstops ('SS') not heavily rated on homeruns. 
-
-
-
-![single_game_results_rf](https://user-images.githubusercontent.com/67566192/123279482-e466d880-d4d5-11eb-8d6d-c1601f30b6d6.PNG)
-
-As you can see from this second graph above, the vast majority of MLB leaders in career hits are HOFers (HOFers denoted by orange plots). 
-**Also note one of the players noted above that is banned from the HOF, Pete Rose is the all-time leader in hits, but not a HOF (blue plot).
+As you can see, vegas is EXTREMELY accurate! In fact, when I compiled the data by team, cumulative of the years 2014 - 2019, the vegas lines for season total wins for each team were staggeringly accurate. Over this 6 year period, only 5 teams had a more than 5% difference when comparing the vegas line to the actual season total wins from that same year. 
 
 
 ## Recommendations
-The most important stats when it comes to evaluating a HOF player is Hits, Runs, and All-Star games made. With this newfound, I recommend to my client that they should use these metrics when negotiating their current contracts as well as look for active and upcoming players with these stats in mind. They will pay off large when these players sign their hundred-million dollar contracts! 
+Bet one of the following teams when wagering on a team’s season total wins 	
+- Detroit Tigers – 10% - Under
+- Houston Astros – 9% - Over
+- Cincinnati Reds – 8% - Under
+- Milwaukee Brewers – 7% - Over
+- San Diego Padres – 6% - Under
+
+Bet on teams that have high run differential and produce a lot of RBIs
 
 ## Conclusion and Future Work
-While my best model performed effectively with a 86% recall and 94% accuracy, it does not meet the requirement of within 5% to reject the null hypothesis. 
-
-I am happy with the performance of my model, but with more time I would have loved to go deeper into the world of sabermetrics and work with stats like OPS+, WOBA, and WAR. These are stats that have come to more accurately define a player's ability, but I was unable to find this data, and calculating them is an extensive task because you must account for the time periods in which these players played in order to accurately implement these stats.
+While I am happy with the performance of my models, I am a little underwhelmed by my findings. Baseball, like all sports, have a high level of parity, meaning that the majority of teams are average and bad teams often beat good teams and vice versa. Couple that with the variability in how a team can win and lose a game, and you can begin to understand how difficult predicting the sport can be. 
+With that said, I am looking forward to continuously building on this project. In future, I will look to build my models up from the most micro level (1 pitch, 1 swing), taking into account pitchers, lineups, etc. in order to then build back up to the macro level (team stats) that I showed in my analysis here. 
     
