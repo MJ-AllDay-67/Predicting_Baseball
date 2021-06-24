@@ -41,15 +41,13 @@ Looking at the visuals above, it is clear that HOF players are vastly better tha
 
 
 
-![hits](https://user-images.githubusercontent.com/67566192/109270845-a6ce9900-77dc-11eb-9621-0721baae4381.png)
+![single_game_results_rf](https://user-images.githubusercontent.com/67566192/123279482-e466d880-d4d5-11eb-8d6d-c1601f30b6d6.PNG)
 
 As you can see from this second graph above, the vast majority of MLB leaders in career hits are HOFers (HOFers denoted by orange plots). 
 **Also note one of the players noted above that is banned from the HOF, Pete Rose is the all-time leader in hits, but not a HOF (blue plot).
 
 
 ## Recommendations
-![feature_importances_best](https://user-images.githubusercontent.com/67566192/109297156-8cf27d80-77ff-11eb-9032-08d929033f29.png)
-
 The most important stats when it comes to evaluating a HOF player is Hits, Runs, and All-Star games made. With this newfound, I recommend to my client that they should use these metrics when negotiating their current contracts as well as look for active and upcoming players with these stats in mind. They will pay off large when these players sign their hundred-million dollar contracts! 
 
 ## Conclusion and Future Work
