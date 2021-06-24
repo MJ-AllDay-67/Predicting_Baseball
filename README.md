@@ -35,7 +35,7 @@ For modeling, I chose to work mostly with DecisionTree classifiers. Logisitc reg
 
 ## Findings
 I found the stats both by position and overall playing career.
-![stats_subplots](https://user-images.githubusercontent.com/67566192/109269259-40487b80-77da-11eb-9537-db72fbce3be8.png)
+![vegas_accuracy](https://user-images.githubusercontent.com/67566192/123279297-b8e3ee00-d4d5-11eb-9d54-f51167796a25.png)
 
 Looking at the visuals above, it is clear that HOF players are vastly better than the rest of the field in every stat, however, there are different requirements depending on position i.e. Catchers ('C') not heavily rated on the number of hits or Shortstops ('SS') not heavily rated on homeruns. 
 
