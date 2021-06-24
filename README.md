@@ -1,4 +1,4 @@
-![HOF_cover](https://user-images.githubusercontent.com/67566192/109255123-5990fe00-77c1-11eb-94e9-254e184c0b78.jpg)
+![Cover_image](https://user-images.githubusercontent.com/67566192/123279116-8d610380-d4d5-11eb-88d2-327de940fc53.jpg)
 
 # Predicting Wins in MLB 
 
