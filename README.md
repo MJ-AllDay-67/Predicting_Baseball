@@ -1,4 +1,4 @@
-![Cover_image](https://user-images.githubusercontent.com/67566192/123279116-8d610380-d4d5-11eb-88d2-327de940fc53.jpg)
+[Capstone_presentation_cover.pdf](https://github.com/MJ-AllDay-67/Capstone/files/6744845/Capstone_presentation_cover.pdf)
 
 # Predicting Wins in MLB 
 
