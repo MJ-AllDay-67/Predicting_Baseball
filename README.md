@@ -1,8 +1,5 @@
 ![presentation_cover](https://user-images.githubusercontent.com/67566192/124053146-b7db2100-d9ed-11eb-89b8-b80bde9ad8a9.PNG)
 
-# Predicting Wins in MLB 
-
-**Author**: Michael Tiernan
 
 ## Brief History
 Betting on sports has a long history despite the fact that it has only recently become legal to do so outside of Nevada (which legalized it in 1942). New Jersey became just the second state in the US to legalize sports betting following a US Supreme Court ruling in May of 2018. This was a major court decision that opened the floodgates for more states to follow and billions of dollars to be generated doing so. As of today, June 24, 2021, 22 states have legalized sports betting in the US. The rest of the US has either passed or introduced a bill to legalize the industry with the exception of only three states (Idaho, Utah, Wisconsin) who have not. 
